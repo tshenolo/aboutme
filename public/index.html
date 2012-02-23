@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tshenolo Mos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/tshenolo.css">
+	<script>	
+	function setdate(){		
+		var currentTime = new Date()
+		var year = currentTime.getFullYear();
+		console.log(year);		
+		document.getElementById('thisyear').innerHTML = year		
+	}
+	</script>
+</head>
+
+<body onload="setdate();">
+	<div id="container">
+      <div id="content">
+		<h1>Tshenolo Mos</h1>
+		<ul id="nav">
+			<li><span class="active">Home</span></li>
+			<li><a href="http://gplus.to/tshenolo">Google+</a></li>
+			<li><a href="https://twitter.com/#!/tshenolo">Twitter</a></li>
+			<li><a href="https://github.com/tshenolo">Github</a></li>
+		</ul>	
+
+		<h2>About Me</h2>
+		<p><img src="images/tshenolo.jpg" alt="Tshenolo Mos" id="tshenolo" />Greetings. My name is Tshenolo Mos aka tmo. I am a web developer Based in Hamilton, Ont, Canada.</p>
+
+		<h2>Education</h2>
+		<p>I have a bachelor's degree in Computer Engineering from McMaster University.</p>
+
+		<h2>Employment</h2>
+		<p>I work for McMaster University as a java web developer focusing in GRUD web apps.<p>
+
+			<h2>Interests</h2>
+			<p>If I am not coding the next big thing I like watching movies with friends, hitting the gym, or learning something new.</p>
+
+			<h2>Contact</h2>
+			<p>I can be reached at tshenolo at gmail com.</p>
+	    </div>		
+        <div id="footer">&copy; <span id="thisyear"></span></div>
+		</div>  
+	</body>
+	</html>
